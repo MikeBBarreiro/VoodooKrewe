@@ -1,5 +1,74 @@
-.vkinstalink:hover{color: white; text-shadow: 0 0 5px black;}
+.vkinstalink:hover{
+  color: white;
+  text-shadow: 0 0 5px black;
+}
 
-.Events{padding: 30px; background-color: red;margin-left: 38%;float: right; position: relative;}
+.Events{
+  padding: 30px;
+  background-color: red;
+  margin-left: 38%;
+  float: right;
+  position: relative;
+}
 
-.profileBIoPic{min-width:295px; width: 100%; height: 300px; background-color: RGBA(94, 109, 252, 0.5);}
+.profileBIoPic{min-width:295px;
+  width: 100%;
+  height: 300px;
+  background-color: RGBA(94, 109, 252, 0.5);
+  background-image: url('../../images/GRILLDualWhiteFront_copy.png');
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+}
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  /*background: #EEE;*/
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  background-color: RGBA(109, 110, 98,0.7);
+  counter-increment: gallery-cell;
+  text-align: center;
+}
+
+.flickity-page-dots .dot{
+  background: white !important;
+}
+
+/* cell number */
+/* .gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+
+.flickity-viewport{ height: 400px !important;}
+#eventsPage{
+  background-image: url('https://i.ytimg.com/vi/XjQG4AhsXmM/maxresdefault.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  /*text-shadow: 0 0 15px white;*/
+}
+.event1{
+  background-color: RGBA(94, 109, 252, 0.1);
+  width: 45%;
+  display: block;
+  margin: auto;
+  height: 100%;
+  background-image: url('../../images/3threat2016web.jpg');
+  background-size: 100% 100%;
+}
