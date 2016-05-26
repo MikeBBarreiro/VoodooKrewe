@@ -11,13 +11,22 @@
   position: relative;
 }
 
-.profileBIoPic{min-width:295px;
+.profileBIoPic{
+  min-width:295px;
   width: 100%;
-  height: 300px;
+  height: 450px;
   background-color: RGBA(94, 109, 252, 0.5);
-  background-image: url('../../images/GRILLDualWhiteFront_copy.png');
-  background-size: 90% 90%;
+  background-image: url('../../images/8581888308_ff83c461e4_o.png');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+#idv02:hover{
+  background-image: url('../../images/IdvPlayerShots/tekkmikebF.jpg') !important;
+  background-size: 100% 100%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /* external css: flickity.css */
@@ -37,9 +46,9 @@ body { font-family: sans-serif; }
   width: 100%;
   height: 100%;
   margin-right: 10px;
-  background-color: RGBA(109, 110, 98,0.7);
+  background-color: RGBA(48, 50, 51, 0.7);
   counter-increment: gallery-cell;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .flickity-page-dots .dot{
@@ -58,7 +67,7 @@ body { font-family: sans-serif; }
 
 .flickity-viewport{ height: 400px !important;}
 #eventsPage{
-  background-image: url('https://i.ytimg.com/vi/XjQG4AhsXmM/maxresdefault.jpg');
+  background-image: url('../../images/hintergrund.jpg');
   background-size: 100% 100%;
   background-attachment: fixed;
   /*text-shadow: 0 0 15px white;*/
@@ -71,4 +80,20 @@ body { font-family: sans-serif; }
   height: 100%;
   background-image: url('../../images/3threat2016web.jpg');
   background-size: 100% 100%;
+}
+
+.event1 > a > button:hover{
+  cursor: pointer;
+}
+
+.event1 > a > button > i:hover{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: RGBA(206, 186, 104, 1.00); ;
+}
+
+@media screen and (max-width: 980px){
+  #hideContent{display: none;}
 }
