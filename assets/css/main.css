@@ -3088,7 +3088,11 @@
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: black;
+			background-image: url('../../images/IdvPlayerShots/IMG_3305.JPG');
+			background-size: 50% 100%;
+			background-repeat: no-repeat;
+			background-position: calc(100% - 0px) calc(100% - 0px);
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3123,7 +3127,7 @@
 			.wrapper.style2 input[type="button"].special,
 			.wrapper.style2 .button.special {
 				background-color: #ffffff;
-				color: #e44c65 !important;
+				color: black !important;
 			}
 
 				.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,

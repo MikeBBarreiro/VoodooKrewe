@@ -1,3 +1,11 @@
+.gradient {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#020100, #1C1D26) !important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#020100, #1C1D26)      !important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#020100, #1C1D26)    !important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#020100, #1C1D26)         !important; /* Standard syntax */
+}
+
 .vkinstalink:hover{
   color: white;
   text-shadow: 0 0 5px black;
@@ -19,6 +27,7 @@
   background-image: url('../../images/8581888308_ff83c461e4_o.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  border-radius: 8px;
 }
 #idv02:hover{
   background-image: url('../../images/IdvPlayerShots/tekkmikebF.jpg') !important;
@@ -27,6 +36,18 @@
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  cursor: url('../../images/green-paint-splash.png'), default;
+  box-shadow: 0 0 50px; white;
+}
+#idv17:hover{
+  background-image: url('../../images/IdvPlayerShots/SulliReeceF.jpg') !important;
+  background-size: 100% 100%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor: url('../../images/green-paint-splash.png'), default;
+  box-shadow: 0 0 50px; white;
 }
 
 /* external css: flickity.css */
@@ -96,4 +117,83 @@ body { font-family: sans-serif; }
 
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
+}
+
+@media screen and (max-width: 767px){
+  /*.pos1{width: 100% !important;}*/
+  .col-sm-6{width: 100%;}
+}
+
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 1px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+
+#currentProsspectContainer{
+  /*display: flex;*/
+  width: 100% !important;
+  padding: 20px;
+}
+
+.pos1{
+  background-image: url('../../images/prospects/13268236_1768143470071172_2465102458889995435_o.jpg');
+  background-size: 100% 100%;
+  height: 350px;
+  width: 100%;
+  /*margin: auto;*/
+  display: block;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.pos2{
+  background-image: url('../../images/prospects/13268260_1768143836737802_1340727019263978639_o.jpg');
+  background-size: 100% 100%;
+  height: 350px;
+  width: 100%;
+  /*margin: auto;*/
+  display: block;
+  border-radius: 10px;
+  margin-top: 5px;
 }
