@@ -3093,6 +3093,7 @@
 			background-size: 50% 100%;
 			background-repeat: no-repeat;
 			background-position: calc(100% - 0px) calc(100% - 0px);
+			height: 345px;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,

@@ -7,10 +7,21 @@
 	Landed by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Modified by Michael E. Barreiro 
+	Modified by Michael E. Barreiro
 */
 
 (function($) {
+	// var waypoint = new Waypoint({
+  //   element: document.getElementById('waypoint'),
+  //   handler: function(direction) {
+  //     console.log('Scrolled to waypoint!');
+	// 		if($('.pos1')[0] === 'div.pos1'){
+	// 			$('.pos1').addClass('animated FadeInUp');
+	// 		}
+	//
+	//
+  //   }
+  // });
 
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',

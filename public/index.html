@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
 		<!-- <link rel="stylesheet" href="assets/css/bootstrap.css" /> -->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -255,8 +256,13 @@
 									<!-- <span class="icon alt major fa-lock"></span> -->
 									<div id="idv17" class="profileBIoPic" style="background-image: url(images/IdvPlayerShots/SulliReece.jpg); background-size: 100% 100%;"></div>
 									<h3>Reece Sullivan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
+									<h4 style="margin: -16px 5px 5px 5px;">Sulli</h4>
+									<p>Once more into the fray.. Into the last good fight i'll ever know.. Live and die on this day, Live and Die on this day</p>
+							</div>
+						</div>
+						<!-- this new player bio secion is made if the numbers are un even in displaying the UI -->
+						<div class="box alt">
+							<div class="row uniform">
 								<section class="4u$ 6u$(medium) 12u$(xsmall)">
 									<!-- <span class="icon alt major fa-lock"></span> -->
 									<div id="idv18" class="profileBIoPic"></div>
@@ -265,6 +271,7 @@
 								</section>
 							</div>
 						</div>
+
 						<footer class="major">
 							<ul class="actions">
 								<li><a href="#page-wrapper" class=" scrolly button hvr-ripple-out" style="border: 1px solid white;">Back to top</a></li>
@@ -275,7 +282,9 @@
 
 			<!-- Five -->
 				<section id="five" class="wrapper style2 special fade" style="">
-					<div class="container">
+					<canvas style="position: absolute; left: 0; margin-top: -69px;" id="canvas"></canvas>
+					<div style="position: relative;" class="container">
+
 						<header>
 							<h2>Interested?</h2>
 							<p>Learn how to become one of us, just click below!</p>
@@ -319,6 +328,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/custom.js"></script>
 			<script src="assets/js/flickity.js"></script>
+			<script src="assets/js/particalCanvas.js"></script>
 
 	</body>
 </html>

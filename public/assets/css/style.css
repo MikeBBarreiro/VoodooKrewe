@@ -1,9 +1,8 @@
 .gradient {
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#020100, #1C1D26) !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#020100, #1C1D26)      !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#020100, #1C1D26)    !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#020100, #1C1D26)         !important; /* Standard syntax */
+  background-color: #1A1B23;/* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, #020100, #1C1D26,#020100);
+
+
 }
 
 .vkinstalink:hover{
@@ -101,6 +100,7 @@ body { font-family: sans-serif; }
   height: 100%;
   background-image: url('../../images/3threat2016web.jpg');
   background-size: 100% 100%;
+  border: 1px solid black;
 }
 
 .event1 > a > button:hover{
@@ -122,6 +122,10 @@ body { font-family: sans-serif; }
 @media screen and (max-width: 767px){
   /*.pos1{width: 100% !important;}*/
   .col-sm-6{width: 100%;}
+}
+
+@media screen and (max-width: 670px){
+  #five{ height:30%; }
 }
 
 @-webkit-keyframes hvr-ripple-out {

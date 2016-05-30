@@ -11,7 +11,7 @@ window.onload = function(){
   var day = today.getDate();
   document.getElementById('banner').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
   console.log('Date: ', day, today);
-
+  
 }
 
 var toggleFullImage = function(){
