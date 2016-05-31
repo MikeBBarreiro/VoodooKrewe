@@ -115,27 +115,30 @@ body { font-family: sans-serif; }
   color: RGBA(206, 186, 104, 1.00); ;
 }
 
+/*-=-==Media Query SECION-=-=-=*/
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
 }
-
 @media screen and (max-width: 767px){
   /*.pos1{width: 100% !important;}*/
   .col-sm-6{width: 100%;}
+  section > p{font-size: 10px;}
 }
-
 @media screen and (max-width: 670px){
   #five{ height:30%; }
   .event1{ width: 80%; }
   #eventsPage{ background: none; }
 }
-
 @media screen and (max-width: 450px){
   .pos1{height: 290px !important;}
   .pos2{height: 290px !important;}
+}
+@media screen and (max-width: 380px){
+  .pos1{height: 250px !important;}
+  .pos2{height: 250px !important;}
 
 }
-
+/*-=-=-=Media Query SECION END-=-=-=*/
 @-webkit-keyframes hvr-ripple-out {
   100% {
     top: -12px;
