@@ -126,14 +126,10 @@ body { font-family: sans-serif; }
 
 @media screen and (max-width: 670px){
   #five{ height:30%; }
-  .event1{ width: 80%; }
-  #eventsPage{ background: none; }
 }
 
-@media screen and (max-width: 450px){
-  .pos1{height: 290px !important;}
-  .pos2{height: 290px !important;}
-
+@media screen and (max-width: 670px){
+  .eventsPage{ background: none !important; }
 }
 
 @-webkit-keyframes hvr-ripple-out {
