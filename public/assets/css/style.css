@@ -114,7 +114,28 @@ body { font-family: sans-serif; }
   transition: all 0.5s ease-in-out;
   color: RGBA(206, 186, 104, 1.00); ;
 }
+.event2{
+  background-color: RGBA(94, 109, 252, 0.1);
+  width: 65%;
+  display: block;
+  margin: auto;
+  height: 100%;
+  background-image: url('../../images/SAPNovEvent.jpg');
+  background-size: 100% 100%;
+  border: 1px solid black;
+}
 
+.event2 > a > button:hover{
+  cursor: pointer;
+}
+
+.event2 > a > button > i:hover{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: RGBA(206, 186, 104, 1.00); ;
+}
 /*-=-==Media Query SECION-=-=-=*/
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
@@ -128,6 +149,7 @@ body { font-family: sans-serif; }
   #five{ height:30%; }
   .event1{ width: 80%; }
   #eventsPage{ background: none; }
+  canvas{height: 225px !important;}
 }
 @media screen and (max-width: 450px){
   .pos1{height: 290px !important;}
