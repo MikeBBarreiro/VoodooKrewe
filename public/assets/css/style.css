@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:500);
 .gradient {
   background-color: #1A1B23;/* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, #020100, #1C1D26,#020100);
@@ -86,6 +87,19 @@ body { font-family: sans-serif; }
 } */
 
 .flickity-viewport{ height: 400px !important;}
+
+.eventOver{
+  color: black;
+  text-shadow: 0 0 5px white;
+  background-color: RGBA(210, 53, 70, 0.8);
+  height: 60px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 35%;
+  font-family: 'Dosis', sans-serif;
+}
+
 #eventsPage{
   background-image: url('../../images/hintergrund.jpg');
   background-size: 100% 100%;
@@ -114,6 +128,7 @@ body { font-family: sans-serif; }
   transition: all 0.5s ease-in-out;
   color: RGBA(206, 186, 104, 1.00); ;
 }
+
 .event2{
   background-color: RGBA(94, 109, 252, 0.1);
   width: 65%;
