@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis:500);
+/*@import url(https://fonts.googleapis.com/css?family=Dosis:500);*/
 .gradient {
   background-color: #1A1B23;/* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, #020100, #1C1D26,#020100);
@@ -97,7 +97,6 @@ body { font-family: sans-serif; }
   position: relative;
   text-align: center;
   margin-top: 35%;
-  font-family: 'Dosis', sans-serif;
 }
 
 #eventsPage{
