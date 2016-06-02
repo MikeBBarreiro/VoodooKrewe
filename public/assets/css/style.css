@@ -151,6 +151,9 @@ body { font-family: sans-serif; }
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
 }
+@media screen and (max-width: 770px){
+  #musicPlayer{display: none;}
+}
 @media screen and (max-width: 767px){
   /*.pos1{width: 100% !important;}*/
   .col-sm-6{width: 100%;}
