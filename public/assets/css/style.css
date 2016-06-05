@@ -2,8 +2,6 @@
 .gradient {
   background-color: #1A1B23;/* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, #020100, #1C1D26,#020100);
-
-
 }
 .vkinstalink:hover{
   color: white;
@@ -152,7 +150,7 @@ body { font-family: sans-serif; }
   #hideContent{display: none;}
 }
 @media screen and (max-width: 770px){
-  #musicPlayer{display: none;}
+  #{display: none;}
 }
 @media screen and (max-width: 767px){
   /*.pos1{width: 100% !important;}*/
@@ -250,7 +248,7 @@ body { font-family: sans-serif; }
 }
 
 #musicPlayer{
-  width: 360px;
+  width: 400px;
   color: white;
   text-shadow: 0 0 35px black;
   background-color: RGBA(26, 27, 35, 0.5);
