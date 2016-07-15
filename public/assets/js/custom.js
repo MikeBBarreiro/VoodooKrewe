@@ -15,6 +15,7 @@ window.onload = function(){
   var day = today.getDate();
   document.getElementById('banner').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
   console.log('Date: ', day, today);
+
 }
 
 var toggleFullImage = function(){
@@ -33,6 +34,7 @@ $('#musicPlayer').click(function() {
   $('#musicPlayer').addClass('bounceOutLeft');
 });
 
+
 $(window).scroll(function(){
   // console.log($(window).scrollTop());
   if($(window).scrollTop() > 265 && $(window).scrollTop() < 300){
@@ -49,7 +51,7 @@ $(window).scroll(function(){
     audio.volume = 0;
   }
 })
-
+// 
 // var feed = new Instafeed({
 //   get: 'user',
 //   userId:  182959196,
@@ -57,7 +59,8 @@ $(window).scroll(function(){
 //   accessToken: '182959196.4cef7d2.7cc091e86bf14c1cb012fd939af44b8a',
 //   limit: 12,
 //   resolution: 'low_resolution',
-//   template: '<a href="{{link}}" class="instagram-{{orientation}}" target="_blank"><img src="{{image}}" /></a>',
+//   // template: '<a href="{{link}}" class="instagram-{{orientation}}" target="_blank"><img src="{{image}}" /></a>',
+//   template: '<div class="col3"><a href="{{link}}" target="_blank" style="background-image: url({{image}});" class="zoom instagram-{{orientation}}"></a></div>',
 //   useHttp: true
 // });
 // feed.run();
