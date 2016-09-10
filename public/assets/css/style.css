@@ -1,4 +1,75 @@
 /*@import url(https://fonts.googleapis.com/css?family=Dosis:500);*/
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
+
+.voodooimage{
+  height:100px;
+  width: 100px;
+  border: 5px solid black;
+  position: absolute;
+  left:15px;
+  top: 15px;
+  border-radius: 100px;
+  background-image: url('../../images/vkimage.jpg');
+  background-size: cover;
+}
+
+#overlayNewProspect{
+  height: 95%;
+  width: 70%;
+  background-color: RGBA(26, 27, 35, 1.00);
+  /*margin: auto;
+  display: block;*/
+  margin-top: 24px;
+  padding-top: 20px;
+  box-shadow: 0 0 90px RGBA(26, 27, 35, 1.00);
+  z-index: 9999;
+  position: absolute;
+  left: 16%;
+  border-top-left-radius: 60px;
+  /*opacity: 1;
+  filter: alpha(opacity=1); /* For IE8 and earlier */*/
+}
+.characterOverlay{
+  background-image: url(../../images/graceinDuhActionDayumSun.png);
+  background-size: cover; height: 300px; width: 300px; z-index: 999;
+  position: absolute; right:0; bottom: 35%;
+}
+
+.overlayForModal{
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  /*background-color: RGBA(210, 53, 70, 0.8);*/
+  border-radius: 5px;
+  /*background-image: url('../../images/green-hexagons-background.png');
+  background-size: cover;*/
+}
+
+.modalButton{
+  border:0;
+  background-color:    #d23546;
+  box-shadow:    3px -3px 0 0 #444;
+  color:         #fff;
+  display:       block;
+  padding:       8px 24px;
+  font:          normal 700 24px/1 "Arvo", serif;
+  text-align:    center;
+  text-shadow:   1px 1px 0 #000;
+  width: 90%;
+  height: 75px;
+  margin: auto;
+  font-family: 'Lato', sans-serif; margin-top: 20px;
+}
+
+.modalButton:focus{
+  box-shadow: 0 0 15px black;
+  border: 1px solid black;
+  outline:0;
+}
+.modalButton:hover{cursor: pointer;}
+
+.displayNone{display:none;}
 
 #instafeed { position: relative; width: 100%; }
 
@@ -158,28 +229,46 @@ body { font-family: sans-serif; }
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
 }
-@media screen and (max-width: 770px){
+/*@media screen and (max-width: 770px){
   #{display: none;}
+}*/
+@media screen and (max-width: 770px) and (min-width: 668px){
+  .newProspect{width:60% !important;}
+  .characterOverlay{bottom: 60%;}
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 769px){
   /*.pos1{width: 100% !important;}*/
   .col-sm-6{width: 100%;}
   section > p{font-size: 10px;}
 }
+
 @media screen and (max-width: 670px){
   #five{ height:30%; }
   .event1{ width: 80%; }
   #eventsPage{ background: none; }
   canvas{height: 225px !important;}
 }
+@media screen and (max-width: 670px) and (min-width: 450px){
+  #overlayNewProspect{border-radius: 0px !important;}
+  #overlayNewProspect > p {font-size: 16px;}
+  .characterOverlay{bottom: 45%;}
+  .voodooimage{display: none;}
+}
 @media screen and (max-width: 450px){
   .pos1{height: 290px !important;}
   .pos2{height: 290px !important;}
+  .newProspect{width:100% !important; -webkit-filter: blur(2px);overflow: hidden;}
+  .voodooimage{display: none;}
+  .modalButton{height: 35px;}
+  #overlayNewProspect > p {font-size: 16px;}
+  #overlayNewProspect{border-radius: 0;}
+  .characterOverlay{bottom: 45%;}
 }
+
 @media screen and (max-width: 380px){
   .pos1{height: 250px !important;}
   .pos2{height: 250px !important;}
-
+  .newProspect{height: 250px !important;}
 }
 /*-=-=-=Media Query SECION END-=-=-=*/
 @-webkit-keyframes hvr-ripple-out {
@@ -256,6 +345,16 @@ body { font-family: sans-serif; }
   margin-top: 5px;
 }
 
+.newProspect{
+  background-image: url('../../images/prospects/13268260_1768143836737802_1340727019263978639_o.jpg');
+  background-size: 100% 100%;
+  height: 350px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 18px;
+}
+
 #musicPlayer{
   width: 400px;
   color: white;
@@ -273,3 +372,24 @@ body { font-family: sans-serif; }
 }
 #musicPlayer > h5 {margin: 0;}
 .fa-pause:hover{cursor: pointer;}
+
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover{
+  background-color: #2098d1;
+  color: white;
+}

@@ -1,3 +1,14 @@
+$(document).ready(function() {
+    if(localStorage.getItem('gracePopState') !== 'shown'){
+      console.log('localStorage activation');
+      $(".overlayForModal").delay(1000).fadeIn();
+      localStorage.setItem('gracePopState','shown')
+    }
+    // localStorage.clear()
+});
+
+
+
 window.onload = function(){
   var backImg = [
     'images/VKplayerlandings/Michael01-copy.jpg',
@@ -16,6 +27,9 @@ window.onload = function(){
   document.getElementById('banner').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
   console.log('Date: ', day, today);
 
+}
+var closethemodal = function(){
+  $('.overlayForModal').fadeOut(1000); // Now the pop up is hiden.
 }
 
 var toggleFullImage = function(){
@@ -51,7 +65,7 @@ $(window).scroll(function(){
     audio.volume = 0;
   }
 })
-// 
+//
 // var feed = new Instafeed({
 //   get: 'user',
 //   userId:  182959196,

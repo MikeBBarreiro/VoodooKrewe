@@ -16,11 +16,32 @@
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="assets/css/animate.css" />
-		<!-- <link rel="stylesheet" href="assets/css/bootstrap.css" /> -->
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="landing">
+		<div class="overlayForModal" style="display:none;">
+			<img src="images/green-hexagons-background.png" style="height: 100%; width: 100%; position: absolute; opacity: 0.8;"/>
+			<div id="overlayNewProspect">
+				<p style="text-align: center; font-size: 25px;font-family: 'Lato', sans-serif; margin:0px;">Voodo News!</p>
+				<div class="voodooimage"></div>
+				<div class="newProspect" style="width: 50%;">
+					<h2 style="margin-left: 15px; text-shadow: 0 0 10px black;">Grace</h2>
+				</div>
+				<p style="text-align: center; font-size: 20px;font-family: 'Lato', sans-serif; margin: 20px 0 0 0;">Say Hello to Grace, our new addition to the Voodookrewe Family!</p>
+				<div class="row">
+					<div class="col-sm-6">
+						<a href="prospect.html"><button class="modalButton">Interested?</button></a>
+					</div>
+					<div class="col-sm-6">
+						<button onclick="closethemodal()" class="modalButton popup-close">Sweet!</button>
+					</div>
+				</div>
+				<div class="characterOverlay" style=""></div>
+			</div>
+
+		</div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -51,7 +72,7 @@
 							</li>
 							<li><a class="scrolly" href="#three">Events</a></li>
 							<li><a class="scrolly" href="#four">The Team</a></li>
-							<li><a href="#">V0.0.0</a></li>
+							<li><a href="#">V1.1.0</a></li>
 							<li><a href="prospect.html" class="button special">Interested?</a></li>
 						</ul>
 					</nav>
@@ -306,7 +327,7 @@
 					</div>
 				</section>
 
-				<!-- <div id="instafeed"></div> -->
+				<div id="instafeed"></div>
 
 			<!-- Footer -->
 				<footer id="footer">
