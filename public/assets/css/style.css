@@ -225,6 +225,27 @@ body { font-family: sans-serif; }
   transition: all 0.5s ease-in-out;
   color: RGBA(206, 186, 104, 1.00); ;
 }
+
+.event3{
+  background-image: url('../../images/neverland.jpg');
+  background-color: RGBA(94, 109, 252, 0.1);
+  width: 65%;
+  display: block;
+  margin: auto;
+  height: 100%;
+  background-size: 100% 100%;
+  border: 1px solid black;
+}
+.event3 > a > button:hover{
+  cursor: pointer;
+}
+.event3 > a > button > i:hover{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: RGBA(206, 186, 104, 1.00); ;
+}
 /*-=-==Media Query SECION-=-=-=*/
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
