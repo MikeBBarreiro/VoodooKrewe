@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    if(localStorage.getItem('gracePopState') !== 'shown'){
+    if(localStorage.getItem('garretPopState') !== 'shown'){
       console.log('localStorage activation');
       $(".overlayForModal").delay(1000).fadeIn();
-      localStorage.setItem('gracePopState','shown')
+      localStorage.setItem('garretPopState','shown')
     }
     // localStorage.clear()
 });
