@@ -1,26 +1,42 @@
 $(document).ready(function() {
-    if(localStorage.getItem('garretPopState') !== 'shown'){
-      console.log('localStorage activation');
-      $(".overlayForModal").delay(1000).fadeIn();
-      localStorage.setItem('garretPopState','shown')
-    }
-    // localStorage.clear()
+    // if(localStorage.getItem('garretPopState') !== 'shown'){
+    //   console.log('localStorage activation');
+    //   $(".overlayForModal").delay(1000).fadeIn();
+    //   localStorage.setItem('garretPopState','shown')
+    // }
+    // if(localStorage.getItem('garretPopState') === 'shown'){
+    //   localStorage.clear()
+    // }
+    localStorage.clear()
+
+    $('div.a').each(function(i,el){
+      el.id = 'player' +i+1;
+    });
 });
 
+// $(".bg").interactive_bg({
+//    strength: 25,
+//    scale: 1.05,
+//    animationSpeed: "100ms",
+//    contain: true,
+//    wrapContent: false
+//  });
 
 
 window.onload = function(){
   var backImg = [
-    'images/VKplayerlandings/Michael01-copy.jpg',
-    'images/VKplayerlandings/John02.jpg',
+    'images/VKplayerlandings/blake00.jpg',
     'images/VKplayerlandings/reece00.jpg',
     'images/VKplayerlandings/TekkVKPartical.jpg',
-    'images/VKplayerlandings/matt00.jpg',
     'images/VKplayerlandings/jeremy00.jpeg',
-    'images/VKplayerlandings/brodey00.jpg',
-    'images/VKplayerlandings/blake00.jpg',
     'images/VKplayerlandings/lj00.jpg',
-    'images/VKplayerlandings/andrew00.jpg'
+    'images/VKplayerlandings/andrew00.jpg',
+    'images/VKplayerlandings/14682082_1365334303478046_2597979540311537658_o.jpg',
+    'images/VKplayerlandings/michael03.jpg',
+    'images/VKplayerlandings/Michael01-copy.jpg',
+    'images/VKplayerlandings/brodey00.jpg',
+    'images/VKplayerlandings/matt00.jpg',
+    'images/VKplayerlandings/John02.jpg'
   ];
   var today = new Date();
   var day = today.getDate();
