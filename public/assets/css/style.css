@@ -1,6 +1,63 @@
 /*@import url(https://fonts.googleapis.com/css?family=Dosis:500);*/
 @import 'https://fonts.googleapis.com/css?family=Lato:300';
+@font-face {font-family: VK;src: url('../../assets/fonts/AnotherAmerica.ttf');}
 
+.pbcevents{
+  background-image: url(../../images/pbcevents2018.png);
+  background-size: 100% 100%;
+  height: 400px;
+  width: 445px;
+  margin: auto;
+}
+
+.VoodooKreweTradeMark{
+  /* width: 136px;
+  height: 220px; */
+  width: 72px;
+  height: 111px;
+  position: fixed;
+  bottom: 20px;
+  right: 32px;
+  background-image: url(../../images/VK201701.png);
+  background-size: 100% 100%;
+  z-index: 999;
+}
+.LAWBTradeMark{
+  width: 180px;
+  height: 108px;
+  position: fixed;
+  bottom: 20px;
+  right: 120px;
+  background-image: url(../../images/LAWB-opacity.png);
+  background-size: 100% 100%;
+  z-index: 999;
+}
+
+.gotoybChannel{position: absolute;right: 18px;top: 72px;height: 30px;background: #e32d27;color: white;border: none;border-radius: 3px;font-weight: 700;}
+.gotoybChannel:hover{cursor: pointer;}
+#instaContent{
+  /* width: 120px;
+  display:block;
+  float: right; */
+  /* margin-right: 13px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  margin: 8px; */
+}
+#ytContent{
+  /* display:block;
+  width:   108px;
+  float: right;
+  margin-right: 13px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  margin: 8px; */
+  margin-right: 13px;
+}
 .voodooimage{
   height:100px;
   width: 100px;
@@ -83,9 +140,14 @@
   background-color: #1A1B23;/* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, #020100, #1C1D26,#020100);
 }
+.vkinstalink{font-family: VK;font-size: 116px !important;text-shadow: 5px 5px 5px black;color: white;margin-bottom: 35px !important;}
 .vkinstalink:hover{
   color: white;
-  text-shadow: 0 0 5px black;
+  text-shadow: 5px 5px 25px black;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .Events{
   padding: 30px;
@@ -163,6 +225,16 @@ body { font-family: sans-serif; }
 
 .flickity-viewport{ height: 400px !important;}
 
+.yta:hover{color: transparent !important;}
+.instas:hover{color: transparent !important;}
+
+#ytFeedPage{
+  background-image: url('../../images/VKplayerlandings/jeremyLAWB00.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .eventOver{
   color: black;
   text-shadow: 0 0 5px white;
@@ -187,7 +259,7 @@ body { font-family: sans-serif; }
   display: block;
   margin: auto;
   height: 100%;
-  background-image: url('../../images/tet.jpg');
+  /*background-image: url('../../images/tet.jpg');*/
   background-size: 100% 100%;
   border: 1px solid black;
 }
@@ -248,6 +320,18 @@ body { font-family: sans-serif; }
   color: RGBA(206, 186, 104, 1.00); ;
 }
 /*-=-==Media Query SECION-=-=-=*/
+@media screen and (max-width: 414px){
+  .VoodooKreweTradeMark{
+    display: none;
+  }
+  .LAWBTradeMark{
+    display: none;
+  }
+  .pcredit{display: none;}
+  .gotoybChannel{width: 60px; height: 50px; top: 64px;}
+  .vkinstalink{font-size:100px !important;}
+
+}
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
 }
@@ -291,6 +375,7 @@ body { font-family: sans-serif; }
   .pos1{height: 250px !important;}
   .pos2{height: 250px !important;}
   .newProspect{height: 250px !important;}
+  .vkinstalink{font-size:100px !important;}
 }
 /*-=-=-=Media Query SECION END-=-=-=*/
 @-webkit-keyframes hvr-ripple-out {
@@ -547,3 +632,80 @@ body { font-family: sans-serif; }
 .shine {
   overflow: hidden;
 }
+
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+ 16.65% {
+   -webkit-transform: translateX(8px);
+   transform: translateX(8px);
+ }
+ 33.3% {
+   -webkit-transform: translateX(-6px);
+   transform: translateX(-6px);
+ }
+ 49.95% {
+   -webkit-transform: translateX(4px);
+   transform: translateX(4px);
+ }
+ 66.6% {
+   -webkit-transform: translateX(-2px);
+   transform: translateX(-2px);
+ }
+ 83.25% {
+   -webkit-transform: translateX(1px);
+   transform: translateX(1px);
+ }
+ 100% {
+   -webkit-transform: translateX(0);
+   transform: translateX(0);
+ }
+}
+@keyframes hvr-wobble-horizontal {
+ 16.65% {
+   -webkit-transform: translateX(8px);
+   transform: translateX(8px);
+ }
+ 33.3% {
+   -webkit-transform: translateX(-6px);
+   transform: translateX(-6px);
+ }
+ 49.95% {
+   -webkit-transform: translateX(4px);
+   transform: translateX(4px);
+ }
+ 66.6% {
+   -webkit-transform: translateX(-2px);
+   transform: translateX(-2px);
+ }
+ 83.25% {
+   -webkit-transform: translateX(1px);
+   transform: translateX(1px);
+ }
+ 100% {
+   -webkit-transform: translateX(0);
+   transform: translateX(0);
+ }
+}
+.hvr-wobble-horizontal {
+ display: inline-block;
+ vertical-align: middle;
+ -webkit-transform: perspective(1px) translateZ(0);
+ transform: perspective(1px) translateZ(0);
+ box-shadow: 0 0 1px transparent;
+}
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+ -webkit-animation-name: hvr-wobble-horizontal;
+ animation-name: hvr-wobble-horizontal;
+ -webkit-animation-duration: 1s;
+ animation-duration: 1s;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+}
+
+
+/* youtube custom css */
+.sk-ww-youtube-channel-videos{background-color: rgba(28, 28, 39,0.8) !important;}
+.sk-yt-channel-description{padding-left: 50px; padding-right: 50px;}
+.sk-yt-bottom-follow-btn{width: 30% !important;margin: auto !important;display: block !important;float: none !important;height: 50px;}

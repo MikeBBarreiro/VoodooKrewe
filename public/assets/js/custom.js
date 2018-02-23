@@ -10,8 +10,13 @@ $(document).ready(function() {
     localStorage.clear()
 
     $('div.a').each(function(i,el){
-      el.id = 'player' +i+1;
+      el.id = 'player' + i + 1;
     });
+
+
+    // $('.vkyoutubeBtn').click(function(){
+    //   window.open('https://www.youtube.com/channel/UCrbCxjZu-YO_jN75i6E0vnQ?view_as=subscriber', '_blank');
+    // });
 });
 
 // $(".bg").interactive_bg({
@@ -22,21 +27,37 @@ $(document).ready(function() {
 //    wrapContent: false
 //  });
 
+if ( $(window).width() > 414) {
+  //Add your javascript for large screens here
+}
+else {
+  //Add your javascript for small screens here
+  $('.gotoybChannel').html('<i style="font-size:38px;" class="icon alt fa-youtube"></i>');
+}
+
 
 window.onload = function(){
   var backImg = [
-    'images/VKplayerlandings/blake00.jpg',
-    'images/VKplayerlandings/reece00.jpg',
     'images/VKplayerlandings/TekkVKPartical.jpg',
-    'images/VKplayerlandings/jeremy00.jpeg',
-    'images/VKplayerlandings/lj00.jpg',
-    'images/VKplayerlandings/andrew00.jpg',
-    'images/VKplayerlandings/14682082_1365334303478046_2597979540311537658_o.jpg',
+    'images/VKplayerlandings/MIkeBLAWB00.jpg',
     'images/VKplayerlandings/michael03.jpg',
     'images/VKplayerlandings/Michael01-copy.jpg',
+    'images/VKplayerlandings/michael03.jpg',
+    'images/VKplayerlandings/Michael01-copy.jpg',
+    'images/VKplayerlandings/reece00.jpg',
+    'images/VKplayerlandings/matt00.jpg',
+    'images/VKplayerlandings/John02.jpg',
+    'images/VKplayerlandings/blake00.jpg',
+    'images/VKplayerlandings/14682082_1365334303478046_2597979540311537658_o.jpg',
     'images/VKplayerlandings/brodey00.jpg',
     'images/VKplayerlandings/matt00.jpg',
-    'images/VKplayerlandings/John02.jpg'
+    'images/VKplayerlandings/lj00.jpg',
+    'images/VKplayerlandings/andrew00.jpg',
+    'images/VKplayerlandings/jeremy00.jpeg',
+    'images/VKplayerlandings/LACONNECTLAWB.jpg',
+    'images/VKplayerlandings/moneyLAWB.jpg',
+    'images/VKplayerlandings/charlyJLJLAWB.jpg',
+    'images/VKplayerlandings/jeremyLAWB00.jpg'
   ];
   var today = new Date();
   var day = today.getDate();
@@ -81,19 +102,32 @@ $(window).scroll(function(){
     audio.volume = 0;
   }
 })
-//
-// var feed = new Instafeed({
-//   get: 'user',
-//   userId:  182959196,
-//   clientId: '37e318f3dd3440779d5da44b327ac024',
-//   accessToken: '182959196.4cef7d2.7cc091e86bf14c1cb012fd939af44b8a',
-//   limit: 12,
-//   resolution: 'low_resolution',
-//   // template: '<a href="{{link}}" class="instagram-{{orientation}}" target="_blank"><img src="{{image}}" /></a>',
-//   template: '<div class="col3"><a href="{{link}}" target="_blank" style="background-image: url({{image}});" class="zoom instagram-{{orientation}}"></a></div>',
-//   useHttp: true
-// });
-// feed.run();
+
+//Dear future MikeB.. If your instafeed breaks or just stops working. the client ID or access token OR both have changed
+//You can get the clientId here: https://www.instagram.com/developer/clients/manage/
+//You can get an access token here: http://instagramwordpress.rafsegat.com/docs/get-access-token/
+//You can get the user id with this URL in a browser, just replce My user names with the user name your seacrhing for: https://www.instagram.com/l8mikebl8/?__a=1
+// EXAMPLE FOR USER ID: https://www.instagram.com/EXAMPLEUSERNAMEGOESHERE/?__a=1
+//https://api.instagram.com/v1/users/search?q=[USERNAME]&access_token=[ACCESS TOKEN]
+
+//Below is the access toke, client ID, and user id for MB's feed
+//clientId: '4cef7d2746af4a9a8d87edf0cecc7c9c',
+//accessToken: '182959196.ba4c844.b75dab56a272445e83b8025994e01c11',
+//userID: 182959196
+
+var feed = new Instafeed({
+  get: 'user',
+  userId:  2328738738,
+  clientId: '990ee929f3434139bc03085071a93091',
+  accessToken: '2328738738.ba4c844.056706f55e9143949e5286ed9d67c791',
+  limit: 12,
+  resolution: 'low_resolution',
+  // template: '<a href="{{link}}" class="instagram-{{orientation}}" target="_blank"><img src="{{image}}" /></a>',
+  template: '<div class="col3"><a href="{{link}}" target="_blank" style="background-image: url({{image}});" class="zoom instagram-{{orientation}}"></a></div>',
+  useHttp: true
+});
+feed.run();
+
 
 // $(".viewImage").click( function(event){
 // 	event.preventDefault();

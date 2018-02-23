@@ -1,4 +1,12 @@
 {
-  ".read": true,
-  ".write": true
+  "rules": {
+    "Users": {
+        "$user_id": {
+            ".write": "$user_id === auth.uid"
+        }
+    },
+    "$businessName": {
+        ".write": "root.child('Users').child(auth.uid).child($businessName).child('Permission    s').val() === 'MODERATOR'"
+    }
+}
 }

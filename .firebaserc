@@ -1,5 +1,6 @@
 {
   "projects": {
-    "vk": "voodookrewela"
+    "vk": "voodookrewela",
+    "default": "voodookrewela"
   }
 }

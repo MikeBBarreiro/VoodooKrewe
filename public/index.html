@@ -43,13 +43,18 @@
 
 		</div> -->
 		<div id="page-wrapper">
-
+			<div class="VoodooKreweTradeMark"></div>
+			<div class="LAWBTradeMark"></div>
+			<p class="pcredit" style="position: fixed; bottom: 71px; right: 138px; z-index: 999; font-size: 8px;">
+				Photography credit goes to
+			</p>
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="index.html">VoodooKrewe</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
+							<li><a class="vkyoutubeBtn" href="vkyoutubefeed.html">Youtube</a></li>
 							<li>
 								<a href="#">Divisions</a>
 								<ul>
@@ -72,7 +77,7 @@
 							</li>
 							<li><a class="scrolly" href="#three">Events</a></li>
 							<li><a class="scrolly" href="#four">The Team</a></li>
-							<li><a href="#">V1.5.0</a></li>
+							<li><a href="#">V1.7.0</a></li>
 							<li><a href="prospect.html" class="button special">Interested?</a></li>
 						</ul>
 					</nav>
@@ -89,15 +94,39 @@
 					<div class="content">
 						<header>
 							<a href="https://www.instagram.com/voodookrewelouisiana/?hl=en" target="_blank">
-								<h2 class="vkinstalink" style="color: #5E6DFC;">VoodooKrewe</h2>
+								<p class="vkinstalink" >VoodooKrewe</p>
 							</a>
-							<div style="display: inline-flex;">
-								<i style="margin-top: 10px; margin-right: 5px;" class="fa fa-hand-pointer-o" aria-hidden="true"></i>
-								<p>Follow us on instagram</p>
+							<div style="display: inline-flex;margin-top: -8px;margin-right:19px;">
+								<!-- <i style="margin-top: 10px; margin-right: 5px;" class="fa fa-hand-pointer-o" aria-hidden="true"></i> -->
+								<p>Follow us on</p>
+
 							</div>
+							<a class="hvr-wobble-horizontal yta" style="display: block;color:transparent;" href="vkyoutubefeed.html">
+								<div id="ytContent">
+
+									<img style="display: inline-flex" src="images/if_youtube_317714.svg">
+									<p style="display: inline-flex">Youtube</p>
+								</div>
+							</a>
+							<a class="hvr-wobble-horizontal instas" style="display: block;color:transparent;" href="https://www.instagram.com/voodookrewelouisiana/" target="_blank">
+								<div id="instaContent">
+
+									<img style="display: inline-flex; width: 33px; " src="images/insta.png">
+									<p style="display: inline-flex;">Instagram</p>
+								</div>
+							</a>
+
+							<a class="hvr-wobble-horizontal instas" style="display: block;color:transparent;" href="https://www.facebook.com/VKLouisiana/?ref=bookmarks" target="_blank">
+								<div id="instaContent">
+
+									<img style="display: inline-flex; width: 33px; " src="images/Facebook_Large_Icon.png">
+									<p style="display: inline-flex;">Facebook</p>
+								</div>
+							</a>
+
 							<p></p>
 						</header>
-						<span class="image"><img src="images/vkimage.jpg" alt="" /></span>
+						<span class="image"><img src="images/VK_bannerProfile copy.jpeg" alt="" /></span>
 						<!-- <div class="bg" data-ibg-bg="images/vkimage.jpg"></div> -->
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
@@ -239,6 +268,16 @@
 								<div class="containerthing">
 									<div class="a">
 										<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+										<!-- <div class="aPlayerOverLay" style=""> -->
+									</div>
+									<div class="overlay">
+										<h3 style="margin-top: 180px;">Christien Rucker</h3>
+										<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									</div>
+								</div>
+								<div class="containerthing">
+									<div class="a">
+										<i class="fa fa-user-circle-o" aria-hidden="true"></i>
 									</div>
 									<div class="overlay">
 										<h3 style="margin-top: 180px;">Blake Dunaway</h3>
@@ -365,16 +404,7 @@
 										<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
 									</div>
 								</div>
-								<div class="containerthing">
-									<div class="a">
-										<i class="fa fa-user-circle-o" aria-hidden="true"></i>
-										<!-- <div class="aPlayerOverLay" style=""> -->
-									</div>
-									<div class="overlay">
-										<h3 style="margin-top: 180px;">Christien Rucker</h3>
-										<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-									</div>
-								</div>
+
 
 
 						    <!-- <div class="a">
@@ -444,27 +474,41 @@
 						</a>
 					</div>
 				</section>
+				<div id="video-container"></div>
+		    <!-- <div class="button-container">
+		      <button id="prev-button" class="paging-button" onclick="previousPage();">Previous Page</button>
+		      <button id="next-button" class="paging-button" onclick="nextPage();">Next Page</button>
+		    </div> -->
 
-				<div id="instafeed"></div>
+				<!-- <div id="instafeed"></div> -->
 
 			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; VoodooKrewe. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> & Modified by <a href="http://mikebbarreiro.github.io/">Michael Barreiro</a></li>
-					</ul>
-				</footer>
+			<!-- <div id="includedContent"></div> -->
+			<object style="width: 100%;" data="footer.html">Warning: footer.html could not be included!</object>
 
 		</div>
 
 		<!-- Scripts -->
+
+			<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyDyGhZ_t9VTRz-Xe9O78SuEmgqD793l2lE",
+			    authDomain: "voodookrewela.firebaseapp.com",
+			    databaseURL: "https://voodookrewela.firebaseio.com",
+			    storageBucket: "voodookrewela.appspot.com",
+			    messagingSenderId: "554443671662"
+			  };
+			  firebase.initializeApp(config);
+				// $(function(){
+		    //   $("#includedContent").load("footer.html");
+		    // });
+			</script>
+			<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+			<script src="assets/js/auth.js"></script>
+
+
 			<script src="assets/js/jquery.min.js"></script>
 			<!-- <script src="assets/js/jquery.js"></script> -->
 			<script src="assets/js/instafeed.js"></script>
