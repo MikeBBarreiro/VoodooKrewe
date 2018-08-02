@@ -2,6 +2,12 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:300';
 @font-face {font-family: VK;src: url('../../assets/fonts/AnotherAmerica.ttf');}
 
+.OfficerCrown{
+  width: 20px;
+  margin-left: 6px;
+  position: absolute;
+}
+
 .pbcevents{
   background-image: url(../../images/pbcevents2018.png);
   background-size: 100% 100%;
@@ -57,7 +63,9 @@
   padding-bottom: 6px;
   margin: 8px; */
   margin-right: 13px;
+  color: white;
 }
+.instas{color: white;}
 .voodooimage{
   height:100px;
   width: 100px;
@@ -225,8 +233,8 @@ body { font-family: sans-serif; }
 
 .flickity-viewport{ height: 400px !important;}
 
-.yta:hover{color: transparent !important;}
-.instas:hover{color: transparent !important;}
+/* .yta:hover{color: transparent !important;} */
+/* .instas:hover{color: transparent !important;} */
 
 #ytFeedPage{
   background-image: url('../../images/VKplayerlandings/jeremyLAWB00.jpg');
@@ -259,7 +267,7 @@ body { font-family: sans-serif; }
   display: block;
   margin: auto;
   height: 100%;
-  /*background-image: url('../../images/tet.jpg');*/
+  background-image: url('../../images/pbcevents2018.png');
   background-size: 100% 100%;
   border: 1px solid black;
 }
@@ -278,11 +286,11 @@ body { font-family: sans-serif; }
 
 .event2{
   background-color: RGBA(94, 109, 252, 0.1);
-  width: 65%;
+  width: 50%;
   display: block;
   margin: auto;
   height: 100%;
-  background-image: url('../../images/gangs.jpg');
+  background-image: url('../../images/DON.jpg');
   background-size: 100% 100%;
   border: 1px solid black;
 }
@@ -319,6 +327,21 @@ body { font-family: sans-serif; }
   transition: all 0.5s ease-in-out;
   color: RGBA(206, 186, 104, 1.00); ;
 }
+.SocialBar{
+  position: fixed;z-index: 999;bottom: -20px;left: 1px;background-color: #15151570;padding-left: 16px;padding: 12px;padding-bottom: 2px;border-top-right-radius: 11px;
+}
+.mobSocialBar{
+  position: fixed;
+z-index: 999;
+bottom: -20px;
+background-color: #15151570;
+padding: 12px;
+padding-bottom: 2px;
+border-top-right-radius: 11px;
+width: 100%;
+display: none;
+-webkit-backface-visibility: hidden;
+}
 /*-=-==Media Query SECION-=-=-=*/
 @media screen and (max-width: 414px){
   .VoodooKreweTradeMark{
@@ -330,7 +353,9 @@ body { font-family: sans-serif; }
   .pcredit{display: none;}
   .gotoybChannel{width: 60px; height: 50px; top: 64px;}
   .vkinstalink{font-size:100px !important;}
-
+  .mobSocialBar{display: block;}
+  .SocialBar{display: none;}
+  #musicPlayer{display: none;}
 }
 @media screen and (max-width: 980px){
   #hideContent{display: none;}
@@ -353,12 +378,14 @@ body { font-family: sans-serif; }
   .event1{ width: 80%; }
   #eventsPage{ background: none; }
   canvas{height: 225px !important;}
+  #musicPlayer{display: none;}
 }
 @media screen and (max-width: 670px) and (min-width: 450px){
   #overlayNewProspect{border-radius: 0px !important;}
   #overlayNewProspect > p {font-size: 16px;}
   .characterOverlay{bottom: 35%;}
   .voodooimage{display: none;}
+  #musicPlayer{display: none;}
 }
 @media screen and (max-width: 450px){
   .pos1{height: 290px !important;}
@@ -369,6 +396,7 @@ body { font-family: sans-serif; }
   #overlayNewProspect > p {font-size: 16px;}
   #overlayNewProspect{border-radius: 0;}
   .characterOverlay{bottom: 35%;}
+  #musicPlayer{display: none;}
 }
 
 @media screen and (max-width: 380px){
@@ -376,6 +404,9 @@ body { font-family: sans-serif; }
   .pos2{height: 250px !important;}
   .newProspect{height: 250px !important;}
   .vkinstalink{font-size:100px !important;}
+  .mobSocialBar{display: block;}
+  .SocialBar{display: none;}
+  #musicPlayer{display: none;}
 }
 /*-=-=-=Media Query SECION END-=-=-=*/
 @-webkit-keyframes hvr-ripple-out {
@@ -464,21 +495,22 @@ body { font-family: sans-serif; }
 }
 
 #musicPlayer{
-  width: 400px;
+  width: 342px;
   color: white;
   text-shadow: 0 0 35px black;
   background-color: RGBA(26, 27, 35, 0.5);
   position: fixed;
-  bottom: 22px;
-  left: 19px;
+  bottom: 58px;
+  left: 5px;
   z-index: 99;
   border-radius: 5px;
   padding: 5px;
+  padding-left: 10px;
   margin-top: 5px;
-  -webkit-animation-delay: 4s;
+  -webkit-animation-delay: 1s;
   border: 1px solid black;
 }
-#musicPlayer > h5 {margin: 0;}
+#musicPlayer > h5 {margin: 0;width:fit-content;}
 .fa-pause:hover{cursor: pointer;}
 
 /* Fade */

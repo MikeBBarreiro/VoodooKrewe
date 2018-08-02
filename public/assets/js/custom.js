@@ -13,7 +13,6 @@ $(document).ready(function() {
       el.id = 'player' + i + 1;
     });
 
-
     // $('.vkyoutubeBtn').click(function(){
     //   window.open('https://www.youtube.com/channel/UCrbCxjZu-YO_jN75i6E0vnQ?view_as=subscriber', '_blank');
     // });
@@ -38,26 +37,25 @@ else {
 
 window.onload = function(){
   var backImg = [
+    'images/VKplayerlandings/blake00.jpg',
+    'images/VKplayerlandings/moneyLAWB.jpg',
+    'images/VKplayerlandings/matt00.jpg',
+    'images/VKplayerlandings/John02.jpg',
+    'images/VKplayerlandings/matt00.jpg',
+    'images/VKplayerlandings/jeremyLAWB00.jpg',
+    'images/VKplayerlandings/lj00.jpg',
+    'images/VKplayerlandings/charlyJLJLAWB.jpg',
+    'images/VKplayerlandings/jeremy00.jpeg',
+    'images/VKplayerlandings/andrew00.jpg',
+    'images/VKplayerlandings/14682082_1365334303478046_2597979540311537658_o.jpg',
+    'images/VKplayerlandings/brodey00.jpg',
+    'images/VKplayerlandings/reece00.jpg',
     'images/VKplayerlandings/TekkVKPartical.jpg',
     'images/VKplayerlandings/MIkeBLAWB00.jpg',
     'images/VKplayerlandings/michael03.jpg',
     'images/VKplayerlandings/Michael01-copy.jpg',
     'images/VKplayerlandings/michael03.jpg',
     'images/VKplayerlandings/Michael01-copy.jpg',
-    'images/VKplayerlandings/reece00.jpg',
-    'images/VKplayerlandings/matt00.jpg',
-    'images/VKplayerlandings/John02.jpg',
-    'images/VKplayerlandings/blake00.jpg',
-    'images/VKplayerlandings/14682082_1365334303478046_2597979540311537658_o.jpg',
-    'images/VKplayerlandings/brodey00.jpg',
-    'images/VKplayerlandings/matt00.jpg',
-    'images/VKplayerlandings/lj00.jpg',
-    'images/VKplayerlandings/andrew00.jpg',
-    'images/VKplayerlandings/jeremy00.jpeg',
-    'images/VKplayerlandings/LACONNECTLAWB.jpg',
-    'images/VKplayerlandings/moneyLAWB.jpg',
-    'images/VKplayerlandings/charlyJLJLAWB.jpg',
-    'images/VKplayerlandings/jeremyLAWB00.jpg'
   ];
   var today = new Date();
   var day = today.getDate();
